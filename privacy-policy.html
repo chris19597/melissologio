@@ -5,7 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – Μελισσολόγιο</title>
   <style>
-    body {
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    nav {
+      background: #fff;
+      border-bottom: 2px solid #f5a623;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      font-size: 20px;
+      font-weight: 700;
+      color: #d4820a;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-brand img { width: 32px; height: 32px; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      text-decoration: none;
+      color: #555;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav-links a:hover { color: #d4820a; }
+    .nav-links a.active { color: #d4820a; border-bottom: 2px solid #d4820a; padding-bottom: 2px; }
+    .content {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       max-width: 800px;
       margin: 0 auto;
@@ -19,6 +51,20 @@
   </style>
 </head>
 <body>
+
+  <nav>
+    <a class="nav-brand" href="index.html">
+      <img src="C:\Users\Chris\Downloads\logo.png" alt="logo" />
+      Μελισσολόγιο
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Αρχική</a>
+      <a href="privacy-policy.html" class="active">Πολιτική Απορρήτου</a>
+      <a href="delete-account.html">Διαγραφή Λογαριασμού</a>
+    </div>
+  </nav>
+
+  <div class="content">
 
   <h1>Privacy Policy</h1>
   <p><strong>App name:</strong> Μελισσολόγιο<br />
@@ -60,6 +106,8 @@
   <h2>8. Contact</h2>
   <p>If you have any questions about this Privacy Policy, please contact us at:<br />
   <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a></p>
+
+  </div>
 
 </body>
 </html>

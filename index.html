@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Μελισσολόγιο</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #333;
+      background: #fffdf7;
+    }
+
+    /* Nav */
+    nav {
+      background: #fff;
+      border-bottom: 2px solid #f5a623;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      font-size: 20px;
+      font-weight: 700;
+      color: #d4820a;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-brand img { width: 32px; height: 32px; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      text-decoration: none;
+      color: #555;
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #d4820a; }
+    .nav-links a.active { color: #d4820a; border-bottom: 2px solid #d4820a; padding-bottom: 2px; }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 80px;
+      gap: 24px;
+    }
+    .hero img { width: 120px; height: 120px; }
+    .hero h1 { font-size: 56px; font-weight: 800; color: #d4820a; }
+    .hero p {
+      font-size: 20px;
+      color: #666;
+      max-width: 520px;
+      line-height: 1.7;
+    }
+    .badge {
+      margin-top: 16px;
+      background: #1a1a2e;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 60px 40px;
+      background: #fff;
+    }
+    .feature {
+      background: #fffdf7;
+      border: 1px solid #f0e0c0;
+      border-radius: 16px;
+      padding: 32px 28px;
+      width: 220px;
+      text-align: center;
+    }
+    .feature .icon { font-size: 40px; margin-bottom: 16px; }
+    .feature h3 { font-size: 17px; font-weight: 700; color: #333; margin-bottom: 8px; }
+    .feature p { font-size: 14px; color: #777; line-height: 1.6; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+    footer a { color: #d4820a; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="index.html">
+      <img src="C:\Users\Chris\Downloads\logo.png" alt="logo" />
+      Μελισσολόγιο
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Αρχική</a>
+      <a href="privacy-policy.html">Πολιτική Απορρήτου</a>
+      <a href="delete-account.html">Διαγραφή Λογαριασμού</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img src="C:\Users\Chris\Downloads\logo.png" alt="Μελισσολόγιο logo" />
+    <h1>Μελισσολόγιο</h1>
+    <p>Το ψηφιακό ημερολόγιο του μελισσοκόμου. Διαχειριστείτε κυψέλες, καταγράψτε επιθεωρήσεις και παρακολουθήστε τη μελισσοκομική σας δραστηριότητα εύκολα.</p>
+    <a class="badge" href="#">Σύντομα στο Google Play</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <div class="icon">🐝</div>
+      <h3>Διαχείριση Κυψελών</h3>
+      <p>Οργανώστε όλες τις κυψέλες σας ανά μελισσοκομείο.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📋</div>
+      <h3>Επιθεωρήσεις</h3>
+      <p>Καταγράψτε λεπτομερείς επιθεωρήσεις με όλα τα στοιχεία.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📍</div>
+      <h3>Τοποθεσία GPS</h3>
+      <p>Αποθηκεύστε την τοποθεσία κάθε μελισσοκομείου.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">☁️</div>
+      <h3>Συγχρονισμός</h3>
+      <p>Τα δεδομένα σας συγχρονίζονται με ασφάλεια στο cloud.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Μελισσολόγιο · Akimos ·
+      <a href="privacy-policy.html">Πολιτική Απορρήτου</a> ·
+      <a href="delete-account.html">Διαγραφή Λογαριασμού</a>
+    </p>
+  </footer>
+
+</body>
+</html>
