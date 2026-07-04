@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="featpage.title">Λειτουργίες — Μελισσολόγιο</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="logo.png" alt="Μελισσολόγιο" />
+        <span data-i18n="nav.brand">Μελισσολόγιο</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Αρχική</a>
+          <a href="features.html" class="active" data-i18n="nav.features">Λειτουργίες</a>
+          <a href="contact.html" data-i18n="nav.contact">Επικοινωνία</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-set-lang="el">ΕΛ</button>
+          <button class="lang-btn" type="button" data-set-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Μενού" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1 data-i18n="featpage.h1">Λειτουργίες</h1>
+    <p class="subtitle" data-i18n="featpage.subtitle">Όλα όσα προσφέρει το Μελισσολόγιο για τη διαχείριση του μελισσοκομείου σας.</p>
+  </div>
+
+  <section class="section">
+    <div class="grid">
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        </div>
+        <h3 data-i18n="fp.dash.h">Πίνακας ελέγχου</h3>
+        <p data-i18n="fp.dash.p">Συνολική εικόνα όλων των κυψελών με επίπεδα ειδοποίησης — επείγον, έτοιμη για συγκομιδή, αδύναμο μελίσσι, εκπρόθεσμο — καθώς και οι σημερινές επιθεωρήσεις.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2"/><path d="M12 8v8M8 12h8"/></svg>
+        </div>
+        <h3 data-i18n="fp.hives.h">Μελισσοκομεία & Κυψέλες</h3>
+        <p data-i18n="fp.hives.p">Δημιουργήστε και διαχειριστείτε πολλαπλά μελισσοκομεία, το καθένα με όσες κυψέλες θέλετε, και μετακινήστε κυψέλες μεταξύ τους. Τα ονόματα παραμένουν μοναδικά και ελέγχονται καθώς πληκτρολογείτε.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M7 12.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0zM14 12.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0z"/><path d="M12 17c1.66 0 3-1.34 3-3H9c0 1.66 1.34 3 3 3z"/></svg>
+        </div>
+        <h3 data-i18n="fp.insp.h">Επιθεωρήσεις</h3>
+        <p data-i18n="fp.insp.p">Καταγράψτε κατάσταση βασίλισσας, επίπεδα γόνου, μελιού και γύρης, δύναμη μελισσιού, ιδιοσυγκρασία, ανίχνευση ασθενειών και σημειώσεις. Δείτε παλαιότερες επιθεωρήσεις και επεξεργαστείτε την πιο πρόσφατη.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a8 8 0 0 1 12 0"/><path d="M8.5 11.5a4.5 4.5 0 0 1 7 0"/><path d="M11 14.5a1.4 1.4 0 0 1 2 0"/><path d="M4 6a11 11 0 0 1 16 0"/></svg>
+        </div>
+        <h3 data-i18n="fp.nfc.h">Σάρωση NFC</h3>
+        <p data-i18n="fp.nfc.p">Ακουμπήστε το κινητό σε μια ετικέτα NFC στην κυψέλη για να ανοίξετε αμέσως το ιστορικό της ή να ξεκινήσετε νέα επιθεώρηση. Συνδέστε άγνωστες ετικέτες σε υπάρχουσες κυψέλες ή καταχωρίστε νέες.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+        </div>
+        <h3 data-i18n="fp.gps.h">Τοποθεσία GPS</h3>
+        <p data-i18n="fp.gps.p">Καταγράψτε ακριβείς συντεταγμένες GPS για κάθε μελισσοκομείο και ανοίξτε πλοήγηση στους Χάρτες Google με ένα άγγιγμα.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/><path d="M12 18a3 3 0 0 1-3-3"/></svg>
+        </div>
+        <h3 data-i18n="fp.treat.h">Ημερολόγιο αγωγών</h3>
+        <p data-i18n="fp.treat.p">Καταγράψτε αγωγές ανά κυψέλη — βαρρόα, νοσεμίαση, διατροφή, μυκητιακές, αντιβιοτικά και άλλα — με προϊόν, δόση, ημερομηνία και σημειώσεις.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10M4 12h10M4 18h10"/><path d="m17 5 1.5 1.5L21 4"/><path d="m17 11 1.5 1.5L21 10"/><path d="m17 17 1.5 1.5L21 16"/></svg>
+        </div>
+        <h3 data-i18n="fp.tasks.h">Εργασίες & ειδοποιήσεις</h3>
+        <p data-i18n="fp.tasks.p">Μείνετε ενήμεροι με ειδοποιήσεις για εκπρόθεσμες επιθεωρήσεις, αδύναμα μελίσσια και κυψέλες έτοιμες για συγκομιδή.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-7.97 5.5 5.5 0 0 1 10.6-1.03A3.75 3.75 0 0 1 17 18H7Z"/><path d="M12 11v5"/><path d="m9.5 13.5 2.5-2.5 2.5 2.5"/></svg>
+        </div>
+        <h3 data-i18n="fp.sync.h">Λειτουργία εκτός σύνδεσης</h3>
+        <p data-i18n="fp.sync.p">Όλα αποθηκεύονται πρώτα τοπικά και συγχρονίζονται αυτόματα στο cloud στο παρασκήνιο όταν είστε συνδεδεμένοι, με επαναπροσπάθειες και ένδειξη εκτός σύνδεσης.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3 data-i18n="fp.errors.h">Ανάκτηση από σφάλματα</h3>
+        <p data-i18n="fp.errors.p">Σαφή, φιλικά μηνύματα σφάλματος με σταθερούς κωδικούς και κουμπί «Δοκιμή ξανά» — αντιγράψτε έναν κωδικό για να τον στείλετε στην υποστήριξη.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4.97 0 9 3.582 9 8s-4.03 8-9 8c-1.946 0-3.75-.75-5.268-2M3 12c0-1.25.756-2.412 2.122-3.6.321-.269.642-.56.922-.889C7.454 5.723 9.448 4.745 12 4.745"/><path d="M7 13h6M7 19h3"/></svg>
+        </div>
+        <h3 data-i18n="fp.auth.h">Σύνδεση</h3>
+        <p data-i18n="fp.auth.p">Σύνδεση με email και κωδικό ή με Google, με διαδικασία επαναφοράς κωδικού.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3c-.6 0-1 .4-1 1v16c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V9m-5-6v5m0 6H6m6-6h6m-6 6h6"/></svg>
+        </div>
+        <h3 data-i18n="fp.lang.h">Ελληνικά & Αγγλικά</h3>
+        <p data-i18n="fp.lang.p">Πλήρης υποστήριξη ελληνικών και αγγλικών, με εναλλαγή ανά πάσα στιγμή. Τα ελληνικά είναι η προεπιλογή.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v1m4.22.78l.707-.707M20 12h1m-.78 4.22l-.707-.707M12 20v1m-4.22-.78l-.707.707M4 12H3m.78-4.22l.707.707"/><circle cx="12" cy="12" r="5"/></svg>
+        </div>
+        <h3 data-i18n="fp.settings.h">Σκοτεινό θέμα & ρυθμίσεις</h3>
+        <p data-i18n="fp.settings.p">Το σκοτεινό θέμα ακολουθεί το σύστημά σας, με φωτογραφία προφίλ, όνομα εμφάνισης, διάστημα επιθεώρησης και άλλα στις ρυθμίσεις.</p>
+      </article>
+    </div>
+
+    <div class="section-outro" data-i18n="featpage.outro">Λειτουργεί χωρίς σύνδεση και συγχρονίζεται αυτόματα. Σύντομα διαθέσιμο για Android.</div>
+  </section>
+
+  <footer class="footer">
+    <p data-i18n="footer.copy">© 2026 Μελισσολόγιο · Akimos</p>
+    <div class="footer-links">
+      <a href="index.html" data-i18n="nav.home">Αρχική</a>
+      <a href="features.html" data-i18n="nav.features">Λειτουργίες</a>
+      <a href="contact.html" data-i18n="nav.contact">Επικοινωνία</a>
+      <a href="privacy-policy.html" data-i18n="nav.privacy">Πολιτική Απορρήτου</a>
+      <a href="delete-account.html" data-i18n="nav.delete">Διαγραφή Λογαριασμού</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>

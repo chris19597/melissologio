@@ -1,113 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Μελισσολόγιο</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    nav {
-      background: #fff;
-      border-bottom: 2px solid #f5a623;
-      padding: 0 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-brand {
-      font-size: 20px;
-      font-weight: 700;
-      color: #d4820a;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .nav-brand img { width: 32px; height: 32px; }
-    .nav-links { display: flex; gap: 32px; }
-    .nav-links a {
-      text-decoration: none;
-      color: #555;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .nav-links a:hover { color: #d4820a; }
-    .nav-links a.active { color: #d4820a; border-bottom: 2px solid #d4820a; padding-bottom: 2px; }
-    .content {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      color: #333;
-      line-height: 1.7;
-    }
-    h1 { color: #f5a623; }
-    h2 { margin-top: 2em; color: #555; }
-    a  { color: #f5a623; }
-  </style>
+  <title data-i18n="privacy.title">Πολιτική Απορρήτου — Μελισσολόγιο</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <nav>
-    <a class="nav-brand" href="index.html">
-      <img src="logo.png" alt="logo" />
-      Μελισσολόγιο
-    </a>
-    <div class="nav-links">
-      <a href="index.html">Αρχική</a>
-      <a href="privacy-policy.html" class="active">Πολιτική Απορρήτου</a>
-      <a href="delete-account.html">Διαγραφή Λογαριασμού</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="logo.png" alt="Μελισσολόγιο" />
+        <span data-i18n="nav.brand">Μελισσολόγιο</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Αρχική</a>
+          <a href="features.html" data-i18n="nav.features">Λειτουργίες</a>
+          <a href="contact.html" data-i18n="nav.contact">Επικοινωνία</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-set-lang="el">ΕΛ</button>
+          <button class="lang-btn" type="button" data-set-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Μενού" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <div class="content">
-
-  <h1>Privacy Policy</h1>
-  <p><strong>App name:</strong> Μελισσολόγιο<br />
-     <strong>Package:</strong> com.akimos.melissologio<br />
-     <strong>Last updated:</strong> May 19, 2026</p>
-
-  <p>This Privacy Policy explains how Μελισσολόγιο ("the App") collects, uses, and protects your information.</p>
-
-  <h2>1. Information We Collect</h2>
-  <ul>
-    <li><strong>Account data:</strong> Your email address and password, used to create and manage your account via Supabase authentication.</li>
-    <li><strong>Apiary &amp; hive data:</strong> Information you enter about your apiaries, hives, and inspections (e.g. hive health, queen status, honey levels, notes).</li>
-    <li><strong>Location data:</strong> GPS coordinates of your apiaries, only when you explicitly provide them. Location is not tracked in the background.</li>
-  </ul>
-
-  <h2>2. How We Use Your Information</h2>
-  <ul>
-    <li>To authenticate you and keep your account secure.</li>
-    <li>To store and sync your beekeeping records across your devices.</li>
-    <li>To provide the core features of the App (hive management, inspection tracking).</li>
-  </ul>
-  <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties for marketing purposes.</p>
-
-  <h2>3. Data Storage</h2>
-  <p>Your data is stored locally on your device (SQLite) and optionally synced to a secure cloud database powered by <a href="https://supabase.com" target="_blank">Supabase</a>. Supabase stores data on servers located in the European Union (eu-central-1 region).</p>
-
-  <h2>4. Data Retention</h2>
-  <p>Your data is retained for as long as your account is active. You may request deletion of your account and all associated data at any time by contacting us.</p>
-
-  <h2>5. Security</h2>
-  <p>We use industry-standard security measures including encrypted connections (HTTPS/TLS) and hashed passwords. No method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
-
-  <h2>6. Children's Privacy</h2>
-  <p>The App is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
-
-  <h2>7. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
-
-  <h2>8. Contact</h2>
-  <p>If you have any questions about this Privacy Policy, please contact us at:<br />
-  <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a></p>
-
+  <div class="page-header">
+    <h1 data-i18n="privacy.h1">Πολιτική Απορρήτου</h1>
+    <p class="subtitle" data-i18n="privacy.subtitle">Πώς διαχειριζόμαστε και προστατεύουμε τα δεδομένα σας.</p>
   </div>
 
+  <main class="content">
+
+    <!-- ============================= GREEK ============================= -->
+    <div data-lang="el">
+      <div class="meta-card">
+        <strong>Εφαρμογή:</strong> Μελισσολόγιο<br />
+        <strong>Package:</strong> com.akimos.melissologio<br />
+        <strong>Τελευταία ενημέρωση:</strong> 4 Ιουλίου 2026
+      </div>
+
+      <p>Η παρούσα Πολιτική Απορρήτου εξηγεί πώς το Μελισσολόγιο («η Εφαρμογή») συλλέγει, χρησιμοποιεί και προστατεύει τις πληροφορίες σας.</p>
+
+      <h2>1. Πληροφορίες που Συλλέγουμε</h2>
+      <ul>
+        <li><strong>Στοιχεία λογαριασμού:</strong> Η διεύθυνση email και ο κωδικός σας, για τη δημιουργία και διαχείριση του λογαριασμού σας μέσω της υπηρεσίας ταυτοποίησης Supabase.</li>
+        <li><strong>Δεδομένα μελισσοκομείων &amp; κυψελών:</strong> Πληροφορίες που καταχωρείτε για μελισσοκομεία, κυψέλες, επιθεωρήσεις, αγωγές και εργασίες (π.χ. κατάσταση κυψέλης, βασίλισσα, επίπεδα μελιού, σημειώσεις).</li>
+        <li><strong>Δεδομένα τοποθεσίας:</strong> Συντεταγμένες GPS των μελισσοκομείων σας, μόνο όταν τις παρέχετε ρητά. Η τοποθεσία δεν παρακολουθείται στο παρασκήνιο.</li>
+      </ul>
+
+      <h2>2. Πώς Χρησιμοποιούμε τις Πληροφορίες σας</h2>
+      <ul>
+        <li>Για την ταυτοποίησή σας και την ασφάλεια του λογαριασμού σας.</li>
+        <li>Για την αποθήκευση και τον συγχρονισμό των μελισσοκομικών σας εγγραφών σε όλες τις συσκευές σας.</li>
+        <li>Για την παροχή των βασικών λειτουργιών της Εφαρμογής (διαχείριση κυψελών, επιθεωρήσεις, αγωγές, εργασίες).</li>
+      </ul>
+      <p>Δεν πουλάμε, δεν ενοικιάζουμε και δεν μοιραζόμαστε τα προσωπικά σας δεδομένα με τρίτους για σκοπούς μάρκετινγκ.</p>
+
+      <h2>3. Αποθήκευση Δεδομένων</h2>
+      <p>Τα δεδομένα σας αποθηκεύονται τοπικά στη συσκευή σας και συγχρονίζονται με ασφάλεια σε βάση δεδομένων cloud που υποστηρίζεται από το <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>. Το Supabase αποθηκεύει δεδομένα σε διακομιστές εντός της Ευρωπαϊκής Ένωσης (περιοχή eu-central-1).</p>
+
+      <h2>4. Διατήρηση Δεδομένων</h2>
+      <p>Τα δεδομένα σας διατηρούνται για όσο ο λογαριασμός σας είναι ενεργός. Μπορείτε να ζητήσετε τη διαγραφή του λογαριασμού και όλων των σχετικών δεδομένων ανά πάσα στιγμή, επικοινωνώντας μαζί μας.</p>
+
+      <h2>5. Ασφάλεια</h2>
+      <p>Χρησιμοποιούμε μέτρα ασφαλείας του κλάδου, όπως κρυπτογραφημένες συνδέσεις (HTTPS/TLS) και κατακερματισμένους κωδικούς. Καμία μέθοδος μετάδοσης στο διαδίκτυο δεν είναι 100% ασφαλής και δεν μπορούμε να εγγυηθούμε απόλυτη ασφάλεια.</p>
+
+      <h2>6. Απόρρητο Ανηλίκων</h2>
+      <p>Η Εφαρμογή δεν απευθύνεται σε παιδιά κάτω των 13 ετών. Δεν συλλέγουμε εν γνώσει μας προσωπικές πληροφορίες από παιδιά κάτω των 13 ετών.</p>
+
+      <h2>7. Αλλαγές στην Παρούσα Πολιτική</h2>
+      <p>Ενδέχεται να ενημερώνουμε την παρούσα Πολιτική Απορρήτου κατά καιρούς. Οι αλλαγές θα δημοσιεύονται σε αυτή τη σελίδα με ενημερωμένη ημερομηνία.</p>
+
+      <h2>8. Επικοινωνία</h2>
+      <p>Για οποιαδήποτε ερώτηση σχετικά με την παρούσα Πολιτική Απορρήτου, επικοινωνήστε μαζί μας στο:<br />
+      <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a></p>
+    </div>
+
+    <!-- ============================= ENGLISH ============================= -->
+    <div data-lang="en">
+      <div class="meta-card">
+        <strong>App name:</strong> Melissologio<br />
+        <strong>Package:</strong> com.akimos.melissologio<br />
+        <strong>Last updated:</strong> July 4, 2026
+      </div>
+
+      <p>This Privacy Policy explains how Melissologio ("the App") collects, uses, and protects your information.</p>
+
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li><strong>Account data:</strong> Your email address and password, used to create and manage your account via Supabase authentication.</li>
+        <li><strong>Apiary &amp; hive data:</strong> Information you enter about your apiaries, hives, inspections, treatments and tasks (e.g. hive health, queen status, honey levels, notes).</li>
+        <li><strong>Location data:</strong> GPS coordinates of your apiaries, only when you explicitly provide them. Location is not tracked in the background.</li>
+      </ul>
+
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>To authenticate you and keep your account secure.</li>
+        <li>To store and sync your beekeeping records across your devices.</li>
+        <li>To provide the core features of the App (hive management, inspections, treatments, tasks).</li>
+      </ul>
+      <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties for marketing purposes.</p>
+
+      <h2>3. Data Storage</h2>
+      <p>Your data is stored locally on your device and securely synced to a cloud database powered by <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>. Supabase stores data on servers located in the European Union (eu-central-1 region).</p>
+
+      <h2>4. Data Retention</h2>
+      <p>Your data is retained for as long as your account is active. You may request deletion of your account and all associated data at any time by contacting us.</p>
+
+      <h2>5. Security</h2>
+      <p>We use industry-standard security measures including encrypted connections (HTTPS/TLS) and hashed passwords. No method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>The App is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+      <h2>8. Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at:<br />
+      <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a></p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer.copy">© 2026 Μελισσολόγιο · Akimos</p>
+    <div class="footer-links">
+      <a href="index.html" data-i18n="nav.home">Αρχική</a>
+      <a href="features.html" data-i18n="nav.features">Λειτουργίες</a>
+      <a href="contact.html" data-i18n="nav.contact">Επικοινωνία</a>
+      <a href="delete-account.html" data-i18n="nav.delete">Διαγραφή Λογαριασμού</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
 </body>
 </html>

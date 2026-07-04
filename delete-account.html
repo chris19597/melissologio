@@ -1,105 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delete Account – Μελισσολόγιο</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    nav {
-      background: #fff;
-      border-bottom: 2px solid #f5a623;
-      padding: 0 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-brand {
-      font-size: 20px;
-      font-weight: 700;
-      color: #d4820a;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .nav-brand img { width: 32px; height: 32px; }
-    .nav-links { display: flex; gap: 32px; }
-    .nav-links a {
-      text-decoration: none;
-      color: #555;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .nav-links a:hover { color: #d4820a; }
-    .nav-links a.active { color: #d4820a; border-bottom: 2px solid #d4820a; padding-bottom: 2px; }
-    .content {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      color: #333;
-      line-height: 1.7;
-    }
-    h1 { color: #f5a623; }
-    h2 { margin-top: 2em; color: #555; }
-    a  { color: #f5a623; }
-    .box {
-      background: #fff8ee;
-      border-left: 4px solid #f5a623;
-      padding: 16px 20px;
-      border-radius: 4px;
-      margin: 24px 0;
-    }
-  </style>
+  <title data-i18n="delete.title">Διαγραφή Λογαριασμού — Μελισσολόγιο</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <nav>
-    <a class="nav-brand" href="index.html">
-      <img src="logo.png" alt="logo" />
-      Μελισσολόγιο
-    </a>
-    <div class="nav-links">
-      <a href="index.html">Αρχική</a>
-      <a href="privacy-policy.html">Πολιτική Απορρήτου</a>
-      <a href="delete-account.html" class="active">Διαγραφή Λογαριασμού</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="logo.png" alt="Μελισσολόγιο" />
+        <span data-i18n="nav.brand">Μελισσολόγιο</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Αρχική</a>
+          <a href="features.html" data-i18n="nav.features">Λειτουργίες</a>
+          <a href="contact.html" data-i18n="nav.contact">Επικοινωνία</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-set-lang="el">ΕΛ</button>
+          <button class="lang-btn" type="button" data-set-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Μενού" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <div class="content">
-
-  <h1>Delete Your Account</h1>
-  <p><strong>App:</strong> Μελισσολόγιο (com.akimos.melissologio)</p>
-
-  <p>If you would like to delete your account and all associated data, please send us an email with your request.</p>
-
-  <div class="box">
-    <strong>To request account deletion:</strong><br /><br />
-    Send an email to <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a><br />
-    with the subject line: <strong>Account Deletion Request</strong><br /><br />
-    Please include the email address associated with your account.
+  <div class="page-header">
+    <h1 data-i18n="delete.h1">Διαγραφή Λογαριασμού</h1>
+    <p class="subtitle" data-i18n="delete.subtitle">Ζητήστε τη διαγραφή του λογαριασμού και των δεδομένων σας.</p>
   </div>
 
-  <h2>What gets deleted</h2>
-  <ul>
-    <li>Your account credentials (email &amp; password)</li>
-    <li>All your apiaries and hive records</li>
-    <li>All inspection history</li>
-    <li>Any other data associated with your account</li>
-  </ul>
+  <main class="content">
 
-  <h2>Timeline</h2>
-  <p>We will process your request and permanently delete your account within <strong>7 days</strong>.</p>
+    <!-- ============================= GREEK ============================= -->
+    <div data-lang="el">
+      <div class="meta-card">
+        <strong>Εφαρμογή:</strong> Μελισσολόγιο (com.akimos.melissologio)
+      </div>
 
-  <h2>Questions</h2>
-  <p>If you have any questions, contact us at <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a>.</p>
+      <p>Αν επιθυμείτε να διαγράψετε τον λογαριασμό σας και όλα τα σχετικά δεδομένα, στείλτε μας ένα email με το αίτημά σας.</p>
 
-  </div>
+      <div class="callout">
+        <p><strong>Για να ζητήσετε διαγραφή λογαριασμού:</strong></p>
+        <p>Στείλτε email στο <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a> με θέμα: <strong>Αίτημα Διαγραφής Λογαριασμού</strong>.</p>
+        <p style="margin-bottom:0;">Παρακαλούμε συμπεριλάβετε τη διεύθυνση email που σχετίζεται με τον λογαριασμό σας.</p>
+      </div>
 
+      <h2>Τι διαγράφεται</h2>
+      <ul>
+        <li>Τα διαπιστευτήρια του λογαριασμού σας (email &amp; κωδικός)</li>
+        <li>Όλα τα μελισσοκομεία και οι εγγραφές κυψελών σας</li>
+        <li>Όλο το ιστορικό επιθεωρήσεων, αγωγών και εργασιών</li>
+        <li>Οποιαδήποτε άλλα δεδομένα σχετίζονται με τον λογαριασμό σας</li>
+      </ul>
+
+      <h2>Χρονοδιάγραμμα</h2>
+      <p>Θα επεξεργαστούμε το αίτημά σας και θα διαγράψουμε οριστικά τον λογαριασμό σας εντός <strong>7 ημερών</strong>.</p>
+
+      <h2>Ερωτήσεις</h2>
+      <p>Αν έχετε οποιαδήποτε ερώτηση, επικοινωνήστε μαζί μας στο <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a>.</p>
+    </div>
+
+    <!-- ============================= ENGLISH ============================= -->
+    <div data-lang="en">
+      <div class="meta-card">
+        <strong>App:</strong> Melissologio (com.akimos.melissologio)
+      </div>
+
+      <p>If you would like to delete your account and all associated data, please send us an email with your request.</p>
+
+      <div class="callout">
+        <p><strong>To request account deletion:</strong></p>
+        <p>Send an email to <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a> with the subject line: <strong>Account Deletion Request</strong>.</p>
+        <p style="margin-bottom:0;">Please include the email address associated with your account.</p>
+      </div>
+
+      <h2>What gets deleted</h2>
+      <ul>
+        <li>Your account credentials (email &amp; password)</li>
+        <li>All your apiaries and hive records</li>
+        <li>All inspection, treatment and task history</li>
+        <li>Any other data associated with your account</li>
+      </ul>
+
+      <h2>Timeline</h2>
+      <p>We will process your request and permanently delete your account within <strong>7 days</strong>.</p>
+
+      <h2>Questions</h2>
+      <p>If you have any questions, contact us at <a href="mailto:christou.chris.gr@gmail.com">christou.chris.gr@gmail.com</a>.</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer.copy">© 2026 Μελισσολόγιο · Akimos</p>
+    <div class="footer-links">
+      <a href="index.html" data-i18n="nav.home">Αρχική</a>
+      <a href="features.html" data-i18n="nav.features">Λειτουργίες</a>
+      <a href="contact.html" data-i18n="nav.contact">Επικοινωνία</a>
+      <a href="privacy-policy.html" data-i18n="nav.privacy">Πολιτική Απορρήτου</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
 </body>
 </html>
