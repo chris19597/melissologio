@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="guidepage.title">Οδηγός — Μελισσολόγιο</title>
+  <meta name="description" content="Οδηγός χρήσης του Μελισσολόγιου — πίνακας ελέγχου, επιθεωρήσεις, εργασίες, μελισσοκομεία, χάρτης και σάρωση NFC." />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="logo.png" alt="Μελισσολόγιο" />
+        <span data-i18n="nav.brand">Μελισσολόγιο</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Αρχική</a>
+          <a href="features.html" data-i18n="nav.features">Λειτουργίες</a>
+          <a href="guide.html" class="active" data-i18n="nav.guide">Οδηγός</a>
+          <a href="privacy-policy.html" data-i18n="nav.privacy">Πολιτική Απορρήτου</a>
+          <a href="delete-account.html" data-i18n="nav.delete">Διαγραφή Λογαριασμού</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-set-lang="el">ΕΛ</button>
+          <button class="lang-btn" type="button" data-set-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Μενού" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1 data-i18n="guidepage.h1">Οδηγός χρήσης</h1>
+    <p class="subtitle" data-i18n="guidepage.subtitle">Μια σύντομη ξενάγηση στις βασικές λειτουργίες του Μελισσολόγιου.</p>
+  </div>
+
+  <section class="guide">
+
+    <article class="step">
+      <div class="step-media">
+        <div class="device-frame"><img src="screenshots/01_dashboard.png" alt="Πίνακας ελέγχου" loading="lazy" /></div>
+      </div>
+      <div class="step-body">
+        <span class="step-num">1</span>
+        <h2 data-i18n="g.dash.h">Ο πίνακας ελέγχου σας</h2>
+        <p data-i18n="g.dash.p">Δείτε κάθε κυψέλη με μια ματιά. Οι κάρτες στην κορυφή δείχνουν ποιες κυψέλες χρειάζονται προσοχή, είναι έτοιμες για συγκομιδή, είναι αδύναμες ή εκπρόθεσμες — πατήστε μια κάρτα για να δείτε μόνο αυτές.</p>
+      </div>
+    </article>
+
+    <article class="step">
+      <div class="step-media">
+        <div class="device-frame"><img src="screenshots/02_hive_detail.png" alt="Καρτέλα κυψέλης" loading="lazy" /></div>
+      </div>
+      <div class="step-body">
+        <span class="step-num">2</span>
+        <h2 data-i18n="g.hive.h">Ανοίξτε μια κυψέλη</h2>
+        <p data-i18n="g.hive.p">Κάθε κυψέλη έχει τη δική της καρτέλα με την τελευταία κατάσταση, σημειώσεις, και καρτέλες με το ιστορικό επιθεωρήσεων και αγωγών. Μετονομάστε, μετακινήστε ή σημειώστε την ως παραφυάδα.</p>
+      </div>
+    </article>
+
+    <article class="step">
+      <div class="step-media">
+        <div class="device-frame"><img src="screenshots/03_inspection_form.png" alt="Επιθεώρηση" loading="lazy" /></div>
+      </div>
+      <div class="step-body">
+        <span class="step-num">3</span>
+        <h2 data-i18n="g.insp.h">Καταγράψτε επιθεωρήσεις</h2>
+        <p data-i18n="g.insp.p">Καταγράψτε βασίλισσα, γόνο, επίπεδα μελιού και γύρης, δύναμη μελισσιού, ιδιοσυγκρασία και ελέγχους ασθενειών. Η εφαρμογή τα χρησιμοποιεί για να επισημάνει ποιες κυψέλες χρειάζονται επίσκεψη.</p>
+      </div>
+    </article>
+
+    <article class="step">
+      <div class="step-media">
+        <div class="device-frame"><img src="screenshots/04_tasks.png" alt="Εργασίες" loading="lazy" /></div>
+      </div>
+      <div class="step-body">
+        <span class="step-num">4</span>
+        <h2 data-i18n="g.tasks.h">Μείνετε ενήμεροι</h2>
+        <p data-i18n="g.tasks.p">Η καρτέλα «Εργασίες» συγκεντρώνει ό,τι χρειάζεται να γίνει — εκπρόθεσμοι έλεγχοι, ειδοποιήσεις και κυψέλες έτοιμες για συγκομιδή — ώστε να μην ξεφεύγει τίποτα.</p>
+      </div>
+    </article>
+
+    <article class="step">
+      <div class="step-media">
+        <div class="device-frame"><img src="screenshots/05_apiary_detail.png" alt="Μελισσοκομείο" loading="lazy" /></div>
+      </div>
+      <div class="step-body">
+        <span class="step-num">5</span>
+        <h2 data-i18n="g.apiary.h">Οργανώστε τα μελισσοκομεία</h2>
+        <p data-i18n="g.apiary.p">Ομαδοποιήστε τις κυψέλες σε μελισσοκομεία ανά τοποθεσία και φιλτράρετε τον πίνακα ελέγχου ανά μελισσοκομείο. Εφαρμόστε μια αγωγή σε ολόκληρο το μελισσοκομείο με μία κίνηση.</p>
+      </div>
+    </article>
+
+    <div class="section-outro" data-i18n="guidepage.outro">Μπορείτε να ανοίξετε ξανά αυτόν τον οδηγό μέσα από την εφαρμογή, από τις Ρυθμίσεις.</div>
+  </section>
+
+  <footer class="footer">
+    <p data-i18n="footer.copy">© 2026 Μελισσολόγιο · Akimos</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html" data-i18n="nav.privacy">Πολιτική Απορρήτου</a>
+      <a href="delete-account.html" data-i18n="nav.delete">Διαγραφή Λογαριασμού</a>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
